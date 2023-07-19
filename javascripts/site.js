@@ -13,15 +13,15 @@ function handle_ranking_views() {
   const table_button = document.getElementById('table-button');
   const card_svg = document.getElementById('card-svg');
   const table_svg = document.getElementById('table-svg');
-  const card_view = document.getElementById('card-view');
-  const table_view = document.getElementById('table-view');
+  const schools_card_view = document.getElementById('schools_card');
+  const schools_table_view = document.getElementById('schools_table');
   const icon_blue = 'text-blue-600';
   const active_state = [
     'bg-slate-900',
     'text-white',
-    'hover:opacity-80',
     'flex',
     'items-center',
+    'font-semibold',
     'space-x-2',
     'border',
     'rounded-full',
@@ -44,16 +44,16 @@ function handle_ranking_views() {
     table_button.setAttribute('class', return_class_list(inactive_state));
     card_svg.classList.remove(icon_blue);
     table_svg.classList.add(icon_blue);
-    card_view.classList.remove('hidden');
-    table_view.classList.add('hidden');
+    schools_card_view.classList.remove('hidden');
+    schools_table_view.classList.add('hidden');
   });
-  
+
   table_button.addEventListener('click', function () {
     card_button.setAttribute('class', return_class_list(inactive_state));
     table_button.setAttribute('class', return_class_list(active_state));
     card_svg.classList.add(icon_blue);
     table_svg.classList.remove(icon_blue);
-    table_view.classList.remove('hidden');
-    card_view.classList.add('hidden');
+    schools_table_view.classList.remove('hidden');
+    schools_card_view.classList.add('hidden');
   });
 }
