@@ -8,6 +8,7 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>another | Glanzer's Guide</title>
     <link href="../../../stylesheets/site.css" rel="stylesheet" />
+    <link href="../../../stylesheets/blog.css" rel="stylesheet" />
     <script src="../../../javascripts/site.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./../favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./../favicon_io/favicon-32x32.png">
@@ -16,7 +17,9 @@
 <link rel="manifest" href="./../favicon_io/site.webmanifest">
   </head>
   <body>
-    <nav
+    <!-- Header -->
+    <header>
+      <nav
   class="fixed w-full top-0 z-50 flex flex-wrap items-center justify-between p-6 mb-6 bg-gray-800 text-white tracking-tight"
 >
   <div class="flex items-center flex-shrink-0">
@@ -35,7 +38,7 @@
       <a href="/glossary">Glossary</a>
     </li>
     <li class="inline-block hover:text-gray-200">
-      <a href="/blog">Blog</a>
+      <a href="/blog_directory">Blog</a>
     </li>
     <li class="inline-block hover:text-gray-200">
       <a href="/contact">Contact</a>
@@ -43,8 +46,24 @@
   </menu>
 </nav>
 
-    <main class="container mx-auto px-4 mt-40 lg:mt-56 pb-32">
-      <p>Laboris aute aliquip in laborum ut cupidatat dolore nulla. Adipisicing nulla mollit nostrud mollit do in dolor. Officia laboris sunt sunt ad commodo commodo fugiat. Nulla minim incididunt ipsum qui enim commodo veniam.</p>
+    </header>
+    <main class="pb-32 mt-36 text-lg space-y-10 lg:mt-40 lg:space-y-24">
+      <!-- Hero -->
+      <section class="relative mx-auto w-full h-[50vh] lg:max-w-4xl">
+        <img src="../../../images/school-campus2.png" alt="school campus" class="object-cover w-full h-full" />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h1 class="absolute inset-0 w-full flex justify-center items-center text-center capitalize text-2xl lg:text-4xl px-10 font-semibold text-slate-100">
+          another
+        </h1>
+      </section>
+      <!-- Body -->
+      <section class='px-4 lg:px-8 lg:container lg:mx-auto lg:grid lg:grid-cols-12'>
+        <div class="space-y-6 text-justify lg:col-span-8">
+          <p>
+            Perry Glanzer • May 24, 2023
+          </p>
+          <article class="blog-article space-y-6">
+            <p>Laboris aute aliquip in laborum ut cupidatat dolore nulla. Adipisicing nulla mollit nostrud mollit do in dolor. Officia laboris sunt sunt ad commodo commodo fugiat. Nulla minim incididunt ipsum qui enim commodo veniam.</p>
 
 <p>Lorem veniam esse elit dolor amet sunt pariatur irure nisi nostrud. Duis enim eiusmod dolore fugiat esse Lorem in tempor laborum. Elit anim est consectetur deserunt officia nulla adipisicing Lorem cupidatat cupidatat consectetur aute. Sint elit nulla aute labore ad nostrud ipsum. Quis est labore ea nostrud. Enim aliquip labore quis ullamco amet ullamco cillum eu commodo Lorem deserunt commodo. Nostrud commodo mollit consectetur cupidatat tempor tempor.</p>
 
@@ -52,6 +71,53 @@
 
 <p>Ipsum officia officia ipsum eu qui incididunt aute sint magna velit cupidatat sint velit mollit. Ex exercitation eiusmod eu reprehenderit cupidatat magna commodo sit. Ut anim est dolore minim eiusmod excepteur Lorem minim consectetur ullamco mollit. Aliqua laborum pariatur aliqua ipsum anim sint fugiat quis sunt eiusmod consectetur et mollit aliqua. Voluptate proident eiusmod commodo cillum sit amet magna sunt qui dolor. Ipsum nostrud adipisicing sunt reprehenderit Lorem elit irure pariatur amet dolore commodo non. Nulla aliquip reprehenderit labore mollit tempor mollit.</p>
 
+          </article>
+        </div>
+        <!-- Side Nav -->
+        <aside class="hidden lg:col-start-10 lg:col-span-3 lg:block">
+          <div class="space-y-6">
+            <h2 class="text-xl font-semibold text-slate-700">Recent Blogs</h2>
+            <ul class="space-y-6">
+                <li class="flex flex-col gap-1">
+                  <a href="/blog/2023/student-life/" class="text-slate-600 hover:text-slate-900 hover:underline">The Life as a Student Living in the Campus of the Greatest Christian School in the World</a>
+                  <span class="text-sm">
+                    Perry Glanzer
+                  </span>
+                  <span class="text-sm">
+                    Jul 18, 2023
+                  </span>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <a href="/blog/2023/another/" class="text-slate-600 hover:text-slate-900 hover:underline">another</a>
+                  <span class="text-sm">
+                    Perry Glanzer
+                  </span>
+                  <span class="text-sm">
+                    May 24, 2023
+                  </span>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <a href="/blog/2023/another-very-long-title/" class="text-slate-600 hover:text-slate-900 hover:underline">another very long title</a>
+                  <span class="text-sm">
+                    Perry Glanzer
+                  </span>
+                  <span class="text-sm">
+                    May 24, 2023
+                  </span>
+                </li>
+                <li class="flex flex-col gap-1">
+                  <a href="/blog/2023/test/" class="text-slate-600 hover:text-slate-900 hover:underline">this is a test title for a blog</a>
+                  <span class="text-sm">
+                    Perry Glanzer
+                  </span>
+                  <span class="text-sm">
+                    May 24, 2023
+                  </span>
+                </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
     </main>
   </body>
 </html>

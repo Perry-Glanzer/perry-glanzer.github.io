@@ -1,0 +1,39 @@
+.blog-article h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.blog-article h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.blog-article h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.blog-article h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.blog-article h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.blog-article h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.blog-article a {
+  text-decoration: underline;
+  color: #2563eb;
+}
+.blog-article a:hover,
+.blog-article a:focus {
+  color: #1e40af;
+}
+.blog-article a:visited {
+  color: #6b21a8;
+}
+
+.blog-article a:active {
+  color: #1e293b
+}
